@@ -2,4 +2,4 @@
 
 [Mockup](https://freebiesupply.com/free-psd-websites/landing-page-mockup-by-ivan-vanin/) is here.
 
-[Demosite](http://samplelanding.ml/) running here.
+[Demosite](http://samplelanding.ml/) runs here.

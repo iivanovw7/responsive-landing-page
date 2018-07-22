@@ -1,0 +1,107 @@
+extends default
+
+block bodyContent
+
+  div.wrapper.container-fluid
+    div.heading
+      div.container(style='margin: 0 auto')
+        div.container(style='margin-top: 10px')
+          nav.navbar.navbar-expand-lg.navbar-dark.bg-transparent
+            a.navbar-brand(href='/')
+              img.logo(src='/images/main/LOGO.png')
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+              span.navbar-toggler-icon
+            div#navbarNavDropdown.navbar-collapse.collapse
+              ul.navbar-nav.mr-auto
+              ul.navbar-nav
+                li.nav-item
+                  a.nav-link(href='/portfolio' style='color: white') PORTFOLIO
+                li.nav-item
+                  a.nav-link(href='/about' style='color: white') ABOUT US
+                li.nav-item
+                  a.nav-link(href='/buy' style='color: white') BUY DESIGN
+                li.nav-item
+                  a.nav-link(href='/references' style='color: white') REFERENCES
+          div.row.justify-content-center.titleHolder
+            h1 CHOSE YOUR IMPRESSIVE LANDING PAGE
+          div.row.justify-content-center(style='margin-top: 30px')
+            h3 for business and media
+          div.row.justify-content-center.controlsHolder
+            button.btn.btn-outline-success(onclick="window.location='/buy'") BUY DESIGN
+            button.btn.btn-outline-success(onclick="ScrollView('.col-md-auto.justify-content')") GO TO PROJECTS
+    div.container(style='margin-top: 100px')
+      div.row.justify-content-md-center
+        div.col-md-auto.justify-content
+          h2 OUR PROJECTS
+      div.productsGrid(style='margin-top: 100px')
+        img.nav-link.productImage(src='/images/products/1.png')
+        img.nav-link.productImage(src='/images/products/2.png')
+        img.nav-link.productImage(src='/images/products/3.png')
+        img.nav-link.productImage(src='/images/products/4.png')
+        img.nav-link.productImage(src='/images/products/5.png')
+        img.nav-link.productImage(src='/images/products/6.png')
+        img.nav-link.productImage(src='/images/products/7.png')
+        img.nav-link.productImage(src='/images/products/8.png')
+        img.nav-link.productImage(src='/images/products/9.png')
+      div.row.justify-content-center.productControls
+        button.btn.btn-outline-success() SEE ALL
+    div.container(style='margin-top: 100px')
+      div.row
+        div.col-1
+        div.col-10.textWrapper
+          h2 ABOUT
+          p(style='max-width: 900px') #{text.text}
+        div.col-1
+    div.container(style='margin-top: 100px')
+      div.row
+        div.col.textWrapper
+          h2 ADVANTAGES
+    div.container(style='margin-top: 100px')
+      div.row
+        div.col.textWrapper
+          div.row.advantagesHolder
+            div.col.advantages
+              p Lorem Ipsum is simply dummy text. Lorem Ipsum has been the industry's standard dummy text ever s
+            div.col.advantages
+              img.nav-link(src='/images/main/1 (2).png')
+            div.col.advantages
+              div
+                img.nav-link.tickImage(src='/images/main/1 v.png')
+                p Lorem Ipsum is simply dummy.
+              div
+                img.nav-link.tickImage(src='/images/main/1 v.png')
+                p Lorem Ipsum is simply dummy.
+              div
+                img.nav-link.tickImage(src='/images/main/1 v.png')
+                p Lorem Ipsum is simply dummy.
+    div.container(style='margin-top: 100px')
+      div.row
+        div.col.textWrapper
+          div.row.advantagesHolder
+            div.col.advantages
+              p Lorem Ipsum is simply dummy text. Lorem Ipsum has been the industry's standard dummy text ever s
+            div.col.advantages
+              img.nav-link.features(src='/images/main/2 (1).png')
+            div.col.advantages
+              p Lorem Ipsum is simply dummy text. Lorem Ipsum has been the industry's standard dummy text ever s
+    div.container(style='margin-top: 100px')
+      div.row
+        div.col.textWrapper
+          div.row.advantagesHolder
+            div.col.advantages
+              p Lorem Ipsum is simply dummy text. Lorem Ipsum has been the industry's standard dummy text ever s
+            div.col.advantages
+              img.nav-link.features(src='/images/main/3 (1).png')
+            div.col.advantages
+              p Lorem Ipsum is simply dummy text. Lorem Ipsum has been the industry's standard dummy text ever s
+    div.container(style='margin-top: 100px')
+      div.row.justify-content-xs-center
+        div.col-xl.textWrapper
+          h2 CONTACT US
+          form.mainPage
+            div.form-group
+              input.form-control(type='email' id="emailInput1" placeholder="example123@mail.com")
+            div.form-group
+              textarea.form-control(id="exampleFormControlTextarea1" rows="9" placeholder="Hello, I like your design")
+            div.form-group.sendForm
+              button.btn.btn-outline-success() SEND

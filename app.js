@@ -23,13 +23,15 @@ app.use(logger('dev')); // uses morgan/logger to log output to terminal
 app.use(bodyParser.json()); // uses bodyParser to parse req
 app.use(bodyParser.urlencoded({ extended : true })); // Parses the text as URL encoded data, extended extends UTF chars
 app.use(cookieParser('secret')); // sets the session secret
-// set up session storage (we dont really need this for this app, no login)
+
+
 app.use(session({
   secret: 'secret',
   resave: false,
   saveUninitialized: true,
   cookie: { secure: true }
 }));
+
 app.use(express.static(path.join(__dirname, 'public'))); // sets static file directory path
 app.use(compression()); // uses compression
 app.use(timeout('100s')); // sets timeout interval
@@ -45,22 +47,21 @@ app.use(function (req, res, next) {
   err.status = 404;
   next(err);
 });
+
 if (app.get('env') === 'development') {
   app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.send('error: ' + err.message + ' | ' + err);
   });
 }
+
 app.use(function (err, req, res, next) { // eslint-disable-line no-unused-vars
   res.status(err.status || 404);
-  // log the error for heroku logs
+
   console.log('error', err);
   res.render('error', {});
 });
 
-// serve the app on PORT variable
-// if using Heroku, this will be automatically set
-// AWS/Azure I'm not sure : TODO
 var server = app.listen(port, function(err) {
   if (err) {
     console.log('App listening error ', err);

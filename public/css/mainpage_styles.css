@@ -1,0 +1,282 @@
+.logo {
+  width: 92px;
+  height: 16px; }
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px; }
+
+.heading {
+  background: url("../images/main/wallpaper.png") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+
+.heading:first-child {
+  margin: 0 auto;
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  border-color: white; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+  border-color: white; }
+
+.navbar-nav .nav-link {
+  margin: 15px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: inline-block; }
+.navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #74c793;
+  transition: width 0.3s; }
+.navbar-nav .nav-link:hover::after {
+  width: 40%; }
+
+.titleHolder {
+  justify-content: center;
+  align-items: center; }
+  .titleHolder img {
+    margin-top: 30px; }
+
+.controlsHolder {
+  margin-top: 30px; }
+  .controlsHolder button {
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+    font-weight: bold;
+    border-color: #74c793;
+    color: white; }
+  .controlsHolder button:hover {
+    background: #74c793;
+    border-color: #74c793; }
+
+.sampleWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.productControls {
+  margin-top: 30px; }
+  .productControls button {
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+    font-weight: bold;
+    border-color: #74c793;
+    color: black; }
+  .productControls button:hover {
+    background: #74c793;
+    border-color: #74c793; }
+
+.tickImage {
+  width: 65px;
+  height: 40px; }
+
+.productImage:hover {
+  transform: scale(1.01);
+  cursor: pointer; }
+
+.customProject {
+  background-color: #74c793;
+  width: 437px;
+  height: 399px;
+  display: block;
+  padding: 0.5rem 1rem; }
+
+.textWrapper {
+  flex-wrap: nowrap;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+h1 {
+  font-size: 340%;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 50px; }
+
+h2 {
+  font-size: 270%;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center; }
+
+h3 {
+  font-size: 200%;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center; }
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .advantages div {
+    display: -webkit-inline-box;
+    margin: 10px; }
+  .advantages img.features {
+    width: 200px;
+    height: 180px; }
+  .advantages p {
+    margin-bottom: 0px; }
+
+.sendForm {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap; }
+  .sendForm button {
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-color: #74c793;
+    color: white;
+    background: #74c793; }
+  .sendForm button:hover {
+    background: white;
+    border-color: #74c793;
+    color: black; }
+
+footer .row {
+  margin-right: 0px;
+  margin-left: 0px; }
+footer div {
+  margin-top: 30px;
+  color: rgba(38, 48, 58, 0.34902); }
+
+@media (min-width: 0px) and (max-width: 400px) {
+  .advantagesHolder {
+    display: inline-block; }
+
+  .titleHolder {
+    margin-top: 50px;
+    max-width: 375px; }
+
+  form.mainPage {
+    width: 275px; }
+
+  .heading {
+    height: 900px; }
+
+  .productsGrid {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 300px;
+    grid-template-rows: 250px;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 50px; }
+    .productsGrid img {
+      max-width: 250px; } }
+@media (min-width: 400px) and (max-width: 600px) {
+  .advantagesHolder {
+    display: inline-block; }
+
+  form.mainPage {
+    width: 375px; } }
+@media (min-width: 600px) and (max-width: 800px) {
+  .advantagesHolder {
+    display: flex; }
+
+  form.mainPage {
+    width: 475px; } }
+@media (min-width: 400px) and (max-width: 800px) {
+  .heading {
+    height: 900px; }
+
+  .productsGrid {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 300px;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 50px; }
+    .productsGrid img {
+      width: 400px; } }
+@media (min-width: 540px) {
+  .titleHolder {
+    margin-top: 300px; } }
+@media (min-width: 800px) and (max-width: 1120px) {
+  .advantagesHolder {
+    display: flex; }
+
+  form.mainPage {
+    width: 900px; }
+
+  .heading {
+    height: 900px; }
+
+  .container {
+    max-width: 800px; }
+
+  .productsGrid {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 450px;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 100px; }
+    .productsGrid img {
+      width: 450px; } }
+@media (min-width: 1120px) {
+  .advantagesHolder {
+    display: flex; }
+
+  form.mainPage {
+    width: 900px; }
+
+  .productsGrid {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    grid-template-rows: 450px;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 100px; }
+    .productsGrid img {
+      width: 450px; } }
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1920px; }
+
+  .heading {
+    height: 1050px; } }
+
+/*# sourceMappingURL=mainpage_styles.css.map */

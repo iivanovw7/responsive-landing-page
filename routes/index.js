@@ -5,8 +5,28 @@ var text = require('./text.json');
 
 // setup routing
 router.get('/', function(req, res, next) {
-  res.render('base', {
+  res.render('index', {
       text: text
+  })
+});
+
+router.get('/portfolio', function(req, res, next) {
+  res.render('portfolio', {
+  })
+});
+
+router.get('/about', function(req, res, next) {
+  res.render('about', {
+  })
+});
+
+router.get('/buy', function(req, res, next) {
+  res.render('buy', {
+  })
+});
+
+router.get('/references', function(req, res, next) {
+  res.render('references', {
   })
 });
 
