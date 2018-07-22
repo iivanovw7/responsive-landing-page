@@ -1,7 +1,10 @@
 extends default
 
 block bodyContent
-  //include navbar.pug
+  script(src='/js/main.js')
+  script(src='/js/vendor/jquery-3.3.1.slim.min.js')
+
+  link(rel='stylesheet', href='/css/portfolio_styles.css')
 
   div.heading
     div#wrapper
@@ -38,7 +41,7 @@ block bodyContent
                 a.nav-link(href='/buy' style='color: white') BUY DESIGN
               li.nav-item
                 a.nav-link(href='/references' style='color: white') REFERENCES
-    div.column.justify-content-center
-      h2(style='color: white') OUR PROJECTS
+        div.column.justify-content-center
+          h2(style='color: white') OUR PROJECTS
 
 
