@@ -2,7 +2,22 @@ extends default
 
 block bodyContent
   //include navbar.pug
+
   div.heading
+    div#wrapper
+      div#sidebar-wrapper
+        ul.sidebar-nav
+          img.logo(style='margin: 50px')(src='/images/main/LOGO.png')
+          li.sidebar-brand
+            a(href="#") Projects listings
+          li
+            a(href="#") Project 1
+          li
+            a(href="#") Project 2
+          li
+            a(href="#") Project 3
+          li
+            a#menu-hide(href="#menu-toggle") Hide sidebar
     div.container(style='margin: 0 auto')
       div.container(style='margin-top: 10px')
         nav.navbar.navbar-expand-lg.navbar-dark.bg-transparent
@@ -14,6 +29,8 @@ block bodyContent
             ul.navbar-nav.mr-auto
             ul.navbar-nav
               li.nav-item
+                a#menu-toggle.nav-link(href='#menu-toggle' style='color: white') PROJECTS LIST
+              li.nav-item
                 a.nav-link(href='/portfolio' style='color: white') PORTFOLIO
               li.nav-item
                 a.nav-link(href='/about' style='color: white') ABOUT US
@@ -21,7 +38,7 @@ block bodyContent
                 a.nav-link(href='/buy' style='color: white') BUY DESIGN
               li.nav-item
                 a.nav-link(href='/references' style='color: white') REFERENCES
-        div.column.justify-content-center
-          h2(style='color: white') OUR PROJECTS
+    div.column.justify-content-center
+      h2(style='color: white') OUR PROJECTS
 
 
